@@ -13,6 +13,7 @@
 		C72580FD28A30E0900998A3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C72580FC28A30E0900998A3C /* Preview Assets.xcassets */; };
 		C725810428A30E4500998A3C /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725810328A30E4500998A3C /* DataController.swift */; };
 		C725810628A30E5900998A3C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C725810528A30E5900998A3C /* README.md */; };
+		C725810A28A30FA000998A3C /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C725810828A30FA000998A3C /* CoreDataProject.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C72580FC28A30E0900998A3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C725810328A30E4500998A3C /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		C725810528A30E5900998A3C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C725810928A30FA000998A3C /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				C72580F728A30E0600998A3C /* ContentView.swift */,
 				C725810328A30E4500998A3C /* DataController.swift */,
 				C72580F928A30E0900998A3C /* Assets.xcassets */,
+				C725810828A30FA000998A3C /* CoreDataProject.xcdatamodeld */,
 				C72580FB28A30E0900998A3C /* Preview Content */,
 			);
 			path = CoreDataProject;
@@ -154,6 +157,7 @@
 			files = (
 				C72580F828A30E0600998A3C /* ContentView.swift in Sources */,
 				C725810428A30E4500998A3C /* DataController.swift in Sources */,
+				C725810A28A30FA000998A3C /* CoreDataProject.xcdatamodeld in Sources */,
 				C72580F628A30E0600998A3C /* CoreDataProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +357,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C725810828A30FA000998A3C /* CoreDataProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C725810928A30FA000998A3C /* CoreDataProject.xcdatamodel */,
+			);
+			currentVersion = C725810928A30FA000998A3C /* CoreDataProject.xcdatamodel */;
+			path = CoreDataProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C72580EA28A30E0600998A3C /* Project object */;
 }
