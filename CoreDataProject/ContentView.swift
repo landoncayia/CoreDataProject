@@ -11,10 +11,11 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
     @State private var lastNameFilter = "A"
+    @State private var sortDescriptors: [SortDescriptor<Singer>] = []
     
     var body: some View {
         VStack {
-            FilteredList(predicate: .beginsWith, filterKey: "lastName", filterValue: lastNameFilter) { (singer: Singer) in
+            FilteredList(predicate: .beginsWith, filterKey: "lastName", filterValue: lastNameFilter, sortDescriptors: sortDescriptors) { (singer: Singer) in
                 Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
             }
             
@@ -40,6 +41,14 @@ struct ContentView: View {
             
             Button("Show S") {
                 lastNameFilter = "S"
+            }
+            
+            Button("Regular Sort") {
+                sortDescriptors = [SortDescriptor(\.lastName), SortDescriptor(\.firstName)]
+            }
+            
+            Button("Reverse Sort") {
+                sortDescriptors = [SortDescriptor(\.lastName, order: .reverse), SortDescriptor(\.firstName, order: .reverse)]
             }
         }
     }
